@@ -10,19 +10,46 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container">
+      <div class="card">
+        <div class="face front">
+          <div class="icon">
+            <span></span>
+          </div>
+          <div class="number">
+            <span></span>
+          </div>
+          <div class="icon rotated">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="face back"></div>
+      </div>
+
+      <p class="instruction">Click the card to reveal</p>
+
+      <button class="button" id="new_card">Next card</button>
+
+      <div class="form">
+        <div class="form-group">
+          <label for="width">Width:</label>
+          <input type="number" id="width" placeholder="width" value="300" />
+        </div>
+        <div class="form-group">
+          <label for="height">Height:</label>
+          <input type="number" id="height" placeholder="height" value="420" />
+        </div>
       </div>
     </div>
   </body>
